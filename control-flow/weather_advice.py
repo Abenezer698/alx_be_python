@@ -1,14 +1,20 @@
-# weather_advice.py
+def main():
+    weather = input("How is the weather today? (sunny/rainy/cold/snowy/windy/cloudy): ").strip().lower()
 
-# Prompt user for weather input
-weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
+    if weather == "sunny":
+        print("It's sunny out! Wear sunglasses, a hat, and light clothing.")
+    elif weather == "rainy":
+        print("It's rainy. Don't forget an umbrella and a waterproof jacket.")
+    elif weather == "cold":
+        print("It's cold. Wear a warm coat and maybe some gloves.")
+    elif weather == "snowy":
+        print("It's snowy. Bundle up with a heavy coat, gloves, and a warm scarf.")
+    elif weather == "windy":
+        print("It's windy. A windbreaker and layers are a good idea.")
+    elif weather == "cloudy":
+        print("It's cloudy. You might want a light jacket just in case.")
+    else:
+        print("Hmm, I'm not familiar with that weather—dress comfortably and check the forecast!")
 
-# Provide clothing recommendations
-if weather == "sunny":
-    print("Wear a t-shirt and sunglasses.")
-elif weather == "rainy":
-    print("Don't forget your umbrella and a raincoat.")
-elif weather == "cold":
-    print("Make sure to wear a warm coat and a scarf.")
-else:
-    print("Sorry, I don't have recommendations for this weather.")
+if __name__ == "__main__":
+    main()
